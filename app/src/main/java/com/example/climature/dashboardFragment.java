@@ -41,7 +41,7 @@ public class dashboardFragment extends Fragment {
     ArrayList<Source> sources;
 
 
-    TextView txt_name, weather_name, temp_min, the_temp, temp_max, humidity, predictability, more_info;
+    TextView txt_name, weather_name, temp_min, the_temp, temp_max, humidity, predictability, more_info,city_name;
     ImageView weather_img;
 
 
@@ -76,7 +76,7 @@ public class dashboardFragment extends Fragment {
 
         weather_name = mainView.findViewById(R.id.txt_dashname);
         weather_img = mainView.findViewById(R.id.img_weather);
-        weather_name = mainView.findViewById(R.id.weather_name);
+        city_name = mainView.findViewById(R.id.weather_name);
         temp_min = mainView.findViewById(R.id.temp_min);
         the_temp = mainView.findViewById(R.id.the_temp);
         temp_max = mainView.findViewById(R.id.temp_max);
@@ -140,11 +140,13 @@ public class dashboardFragment extends Fragment {
                 consolidatedWeather = new ArrayList<>(weather.getConsolidatedWeather());
 
                 bundle = new Bundle();
-                bundle.putString("bbc_url","https://www.bbc.com/weather/6077243");
-                //bundle.putString("bbc_url", sources.get(0).getUrl() + getArguments().getInt("bbcid"));
+                //bundle.putString("bbc_url","https://www.bbc.com/weather/6077243");
+                bundle.putString("bbc_url", sources.get(0).getUrl() + getArguments().getInt("bbcid"));
                 bundle.putString("city", weather.getTitle());
 
 
+                //weather_name.setText(sources.get(0).getUrl());
+                city_name.setText(weather.getTitle() + ",\n" + parent.getTitle());
                 the_temp.setText(String.format("%.2f", consolidatedWeather.get(0).getTheTemp()) + "°C");
                 temp_min.setText(String.format("%.2f", consolidatedWeather.get(0).getMaxTemp()));
                 temp_max.setText(String.format("%.2f", consolidatedWeather.get(0).getMinTemp()));
