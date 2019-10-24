@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/AuthenticationUsingFirebase" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DatePicker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/MetaWeatherAPI" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Retrofit" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/WeatherRestAPI" vcs="Git" />
+    <mapping directory="C:\Users\admin\AndroidStudioProjects\Shayari-App" vcs="Git" />
+    <mapping directory="C:\Users\admin\AndroidStudioProjects\WeatherApiWithFirestore" vcs="Git" />
+  </component>
+</project>
