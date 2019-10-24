@@ -126,34 +126,61 @@
         app:layout_constraintStart_toEndOf="@+id/the_temp"
         app:layout_constraintTop_toBottomOf="@+id/lbl_maxtemp" />
 
+
+    <TextView
+        android:id="@+id/text_hum"
+        style="@style/primaryTextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:text="Humidity: "
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_prec"
+        app:layout_constraintVertical_bias="0.006" />
+
     <TextView
         android:id="@+id/humidity"
+        style="@style/primaryTextColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+
         android:layout_marginTop="8dp"
-        android:text="Humidity :"
-        style="@style/primaryTextColor"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.703"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/predictability" />
 
     <TextView
+        android:id="@+id/text_prec"
+        style="@style/primaryTextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:text="Predictability: "
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/temp_min"
+        app:layout_constraintVertical_bias="0.064" />
+
+
+    <TextView
         android:id="@+id/predictability"
+        style="@style/primaryTextColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:text="Predictability :"
-        style="@style/primaryTextColor"
+        android:layout_marginTop="36dp"
+
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.756"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/temp_min" />
-
 
     <TextView
         android:id="@+id/more_info"
@@ -164,10 +191,11 @@
         android:text="MoreInfo"
         android:textColor="#ffffff"
         android:textSize="19sp"
-        android:textStyle="bold|italic" />
-
-
-
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
@@ -179,6 +207,8 @@
         app:layout_constraintHorizontal_bias="0.029"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/humidity" />
+
+
 
 
 

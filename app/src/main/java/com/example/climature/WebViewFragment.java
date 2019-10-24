@@ -71,8 +71,8 @@ public class WebViewFragment extends Fragment {
 
         webView.loadUrl(getArguments().getString("bbc_url"));
 
-       progressDialog = ProgressDialog.show(getActivity(), "Loading...",
-               "Weather in " + getArguments().getString("city"), true);
+        progressDialog = ProgressDialog.show(getActivity(), "Loading...",
+                "Weather in " + getArguments().getString("city"), true);
 
         webView.setWebViewClient(new WebViewClient() {
 

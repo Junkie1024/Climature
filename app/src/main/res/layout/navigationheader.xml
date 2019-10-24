@@ -8,27 +8,26 @@
 
 
     <ImageView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="235dp"
+        android:layout_height="80dp"
         android:layout_gravity="center"
-        android:layout_marginEnd="132dp"
+        android:layout_marginEnd="108dp"
         android:layout_weight="1"
         android:src="@drawable/logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatCheckedTextView
         android:id="@+id/appcompactTextview"
-        android:layout_width="213dp"
-        android:layout_height="39dp"
+        android:layout_width="177dp"
+        android:layout_height="42dp"
         android:layout_marginTop="44dp"
         android:text="CLIMATURE"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.964"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
